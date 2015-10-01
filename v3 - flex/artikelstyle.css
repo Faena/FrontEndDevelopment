@@ -1,0 +1,125 @@
+
+article, section, header, main {
+	padding: .8em;
+}
+
+
+html {
+  box-sizing: border-box;
+} 
+
+body {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+	
+body > header {
+	background-color: red;
+	width: 100%;
+	order: 1;
+}
+
+.related  {
+	background-color: gray;
+	width: 100%;
+	order: 4;
+}
+
+
+aside { 
+background-color: yellow;
+width: 100%;
+order: 3;
+
+
+}
+
+body > footer {
+	background-color: pink;
+	order: 5;
+}
+
+body > footer h2 {
+	-webkit-column-span: all;
+}
+
+main {
+ background-color: purple;
+ width: 100%;
+ order: 2;
+}
+
+h1 {
+	font-size: 2.1em;
+}
+h2 {
+
+	font-size: 1.999em;
+}
+h3 {
+	font-size: 1.414em;
+}
+
+h4 {
+	font-size: 1em;
+}
+
+@media all and (min-width: 600px) {
+	body > header {
+		width: 100%;
+		order: 1;
+	}
+
+	main {
+		width: 30%;
+		flex-grow: 2;
+		order: 2;
+	}
+
+	aside {
+		width: 30%;
+		flex-grow: 1;
+		order: 3;
+	}
+
+	.related  {
+		display: flex;
+		flex-wrap: wrap;
+		align-content: flex-start;
+	}
+
+	.related > article {
+		width: 100%;
+	}
+}
+
+@media all and (min-width: 1000px) {
+	body > header {
+		width: 20%;
+		flex-grow: 0;
+		order: 1;
+	}
+
+	main {
+		width: 50%;
+		flex-grow: 1;
+		order: 2;
+	}
+
+	aside {
+		width: 15%;
+		flex-grow: 1;
+		order: 3;
+	}
+	.related  {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.related article {
+		width: 30%;
+	}
+
+}
