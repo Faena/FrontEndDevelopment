@@ -1,0 +1,17 @@
+section > article {
+	border-radius: 2em 20em 40em 6em;
+	background-color: hsla(90, 50%, 50%, 0.8);
+	box-shadow: 11em 11em 5em 0 rgba(0, 194, 187, 0.75);
+}
+section > article:hover {
+	transition: 1s ease;
+	transform: rotate(.4turn);
+}
+
+section > h1 {
+	text-shadow: 0 0 2em hsla(20, 90%, 30%, 1), 0 0 1em #0000FF;
+}
+
+blockquote {
+	transform: skew(3deg, 1deg);
+}
